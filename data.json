@@ -1,0 +1,90 @@
+{
+    "journal": {
+      "nomJournal": "HallyuPulse",
+      "phraseAccroche": "Catch the waves of K-pop and ride the pulse of its magic.",
+      "texteAppelAction": "Rejoignez notre newsletter pour suivre vos idols préférés",
+      "articlePrincipal": {
+        "titre": "BTS en tête des charts mondiaux avec leur nouvel album",
+        "description": "Le groupe légendaire revient avec un album qui bat tous les records.",
+        "date": "1er Décembre 2024",
+        "theme": "Actualités",
+        "image": "images/image.png"
+      },
+      "articles": [
+        {
+          "titre": "BLACKPINK annonce une tournée mondiale inédite",
+          "date": "28 Novembre 2024",
+          "theme": "Concerts",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "NCT : Tout ce qu'il faut savoir sur leurs multiples sous-unités",
+          "date": "20 Novembre 2024",
+          "theme": "Groupes",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Les rookies à suivre en 2025 : NewJeans, ZEROBASEONE et plus",
+          "date": "15 Novembre 2024",
+          "theme": "Nouveaux talents",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Les collaborations K-pop x mode qui font sensation",
+          "date": "10 Novembre 2024",
+          "theme": "Mode & Style",
+          "image": "images/image.png"
+        },
+        {
+          "titre": "Stray Kids : Un succès fulgurant dans l'industrie mondiale",
+          "date": "5 Novembre 2024",
+          "theme": "Groupes",
+          "image": "images/image.png"
+        }
+      ],
+      "themes": [
+        {
+          "nom": "Actualités",
+          "description": "Les dernières nouvelles et annonces dans le monde de la K-pop."
+        },
+        {
+          "nom": "Concerts",
+          "description": "Toutes les informations sur les tournées et performances live."
+        },
+        {
+          "nom": "Groupes",
+          "description": "Focus sur les groupes emblématiques et en pleine ascension."
+        },
+        {
+          "nom": "Nouveaux talents",
+          "description": "Les rookies et nouveaux artistes qui redéfinissent la scène K-pop."
+        },
+        {
+          "nom": "Mode & Style",
+          "description": "Les tendances mode dictées par vos idols préférés."
+        },
+        {
+          "nom": "Collaborations",
+          "description": "Les partenariats entre stars de la K-pop et autres industries."
+        }
+      ],
+      "auteurs": [
+        {
+          "prenom": "Moana",
+          "typeExperience": "Correspondante K-pop",
+          "presentation": "Basée à Séoul, je couvre les actualités des idols et des agences de divertissement."
+        },
+        {
+          "prenom": "Oumou",
+          "typeExperience": "Chroniqueuse mode K-pop",
+          "presentation": "Passionnée par le style des idols, j'analyse leurs looks iconiques et les collaborations de mode."
+        },
+        {
+          "prenom": "Marie",
+          "typeExperience": "Expert fanbase",
+          "presentation": "Ancien administrateur de fanclubs, je partage des anecdotes et des analyses sur la dynamique des fandoms."
+        }
+      ]
+    }
+  }
+  
