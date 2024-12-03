@@ -4,8 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="Everything you dream of about K-pop? It all comes alive in one place—here. Stay in tune, stay inspired, and stay connected to the heartbeat of your favorite idols.">
-   <meta name="keyword" content="Aespa, BigBang, NewJeans, Gdragon, YGent, idols, Kpop">
+   <meta name="keywords" content="Aespa, BigBang, NewJeans, Gdragon, YGent, idols, Kpop">
    <meta name="author" content="Marie-France Lunganga">
+   <meta property="og:title" content="HallyuPulse - Your K-pop Universe">
+   <meta property="og:description" content="Everything you dream of about K-pop? It all comes alive in one place—here.">
+   <meta property="og:url" content="http://www.hallyupulse.com">
    <title>HallyuPulse</title>
    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-photo/high-resolution-hallyu-style-black-white-bunny-icon_899449-109439.jpg">
    <link rel="stylesheet" href="style.css">
@@ -14,19 +17,16 @@
    <!-- Début HTML -->
    <nav>
    <div class="logo">
-      <img src="images/logo.svg" alt="">
+      <img src="images/logo.svg" alt="logo of HallyuPulse">
       <h1>HallyuPulse</h1>
    </div>
-   <ul>
-      <li><a href="#">Thème 1</a></li>
-      <li><a href="#">Thème 2</a></li>
-      <li><a href="#">Thème 3</a></li>
-      <li><a href="#">Thème 4</a></li>
+   <ul id="navThemes">
+      <!-- placement navigation thèmes ici (sans les descriptions) -->
    </ul>
 
    <div class="button">
-      <a href="">S'abonner</a>
-      <img src="images/avatar.jpg" alt="Kpop hero banner">
+      <a href="#">S'abonner</a>
+      <img src="images/avatar.jpg" alt="User profile">
    </div>
    </nav>
 
@@ -38,12 +38,15 @@
      </header>
 
       <div id="heroBanner">
-         <img src="images/image.png" alt="">
+         <img src="images/image.png" alt="Kpop hero banner">
+         <noscript>
+            <p>Images are unavailable without JavaScript enabled.</p>
+        </noscript>
       </div>
       <section id="headline">
          <h2>Latest news</h2>
          <article class="latestArticle">
-            <!-- Le contneu sera injecté ici -->
+            <!-- Le contenu sera injecté ici -->
          </article>
       </section>
 
@@ -56,7 +59,7 @@
    
       <div id="themes">
          <h3>Explore by Themes</h3>
-         <ul id="themesList">
+         <ul class="themesList">
             <!-- Les thèmes seront injectés ici -->
          </ul>
       </div>

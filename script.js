@@ -10,8 +10,14 @@ function getData() {
        // Traitez les données comme vous le souhaitez
        console.log('Données récupérées du fichier JSON :', data);
        /// ON ECRIT LE CODE ICI ! 
+      let journal = data.journal.nomJournal;
+      let headline = data.journal.articlePrincipal;
+      let articles = data.journal.articles;
+      let themes = data.journal.themes;
+      let auteurs = data.journal.auteurs;
       
-
+      let navThemes = document.getElementById('navThemes');
+      let button = document.getElementsByClassName("button");
       
 
        /// FIN DU CODE
