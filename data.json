@@ -3,6 +3,8 @@
       "nomJournal": "HallyuPulse",
       "phraseAccroche": "Catch the waves of K-pop and ride the pulse of its magic.",
       "texteAppelAction": "Rejoignez notre newsletter pour suivre vos idols préférés",
+      "button-nav":"Follow",
+      "bouton-article": "Read the article",
       "articlePrincipal": {
         "titre": "BTS en tête des charts mondiaux avec leur nouvel album",
         "description": "Le groupe légendaire revient avec un album qui bat tous les records.",
@@ -10,6 +12,14 @@
         "theme": "Actualités",
         "image": "images/image.png"
       },
+      "navigation": [
+        { "nom": "Actualités", "lien": "#actualites" },
+        { "nom": "Concerts", "lien": "#concerts" },
+        { "nom": "Groupes", "lien": "#groupes" },
+        { "nom": "Nouveaux talents", "lien": "#nouveauxtalents" },
+        { "nom": "Mode & Style", "lien": "#modestyle" },
+        { "nom": "Collaborations", "lien": "#collaborations" }
+      ],
       "articles": [
         {
           "titre": "BLACKPINK annonce une tournée mondiale inédite",
@@ -72,17 +82,20 @@
         {
           "prenom": "Moana",
           "typeExperience": "Correspondante K-pop",
-          "presentation": "Basée à Séoul, je couvre les actualités des idols et des agences de divertissement."
+          "presentation": "Basée à Séoul, je couvre les actualités des idols et des agences de divertissement.",
+          "image": "images/image.png"
         },
         {
           "prenom": "Oumou",
           "typeExperience": "Chroniqueuse mode K-pop",
-          "presentation": "Passionnée par le style des idols, j'analyse leurs looks iconiques et les collaborations de mode."
+          "presentation": "Passionnée par le style des idols, j'analyse leurs looks iconiques et les collaborations de mode.",
+          "image": "images/image.png"
         },
         {
           "prenom": "Marie",
           "typeExperience": "Expert fanbase",
-          "presentation": "Ancien administrateur de fanclubs, je partage des anecdotes et des analyses sur la dynamique des fandoms."
+          "presentation": "Ancien administrateur de fanclubs, je partage des anecdotes et des analyses sur la dynamique des fandoms.",
+          "image": "images/image.png"
         }
       ]
     }
