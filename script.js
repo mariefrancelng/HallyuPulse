@@ -28,16 +28,16 @@ function getData() {
      .catch((error) => console.error('Erreur lors de la lecture des données :', error));
  }
  
- getData();
+getData();
 
- ///ON écrit les fonctions ici
+///ON écrit les fonctions ici
 
- function afficherNavigation(navigation) {
+function afficherNavigation(navigation) {
   const navThemes = document.querySelector('.navThemes');
   navThemes.innerHTML = '';
 
   navigation.forEach((item) => {
-    const li = document.createElement('li');
+    let li = document.createElement('li');
     li.innerHTML = `<a href="${item.lien}">${item.nom}</a>`;
     navThemes.appendChild(li);
   });
@@ -74,13 +74,16 @@ function afficherHeadline(headline) {
   let headlineContainer = document.querySelector('.latestArticle');
 
   
-  headlineContainer.innerHTML = `<h3>${headline.titre}</h3>
-    <p>${headline.description}</p>
-    <p><strong>Date :</strong> ${headline.date}</p>
-    <p><strong>Theme :</strong> ${headline.theme}</p>
-    <img src="${headline.image}" alt="Image for ${headline.titre}">
-    <a href="#" class="button secondary">Read the article</a>
-  `;
+  headlineContainer.innerHTML = `<div class="imageContainer">
+      <img src="${headline.image}" alt="Image for ${headline.titre}"></div>
+      <div class="content">
+      <h3>${headline.titre}</h3>
+      <div class="date"><p><strong>Date :</strong> ${headline.date}</p>
+      <p><strong>Theme :</strong> ${headline.theme}</p></div>
+      <p>${headline.description}</p>
+      <a href="#" class="button secondary">Read the article</a>
+      </div>
+    `;
 }
 
 function afficherArticles(articles) {

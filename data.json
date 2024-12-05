@@ -10,7 +10,7 @@
         "description": "Le groupe légendaire revient avec un album qui bat tous les records.",
         "date": "1er Décembre 2024",
         "theme": "Actualités",
-        "image": "images/image.png"
+        "image": "https://essentialhomme.fr/wp-content/uploads/2023/03/BTS-The-Phenomenon-of-Brand-Collaborations.webp"
       },
       "navigation": [
         { "nom": "Actualités", "lien": "#actualites" },
@@ -25,31 +25,31 @@
           "titre": "BLACKPINK annonce une tournée mondiale inédite",
           "date": "28 Novembre 2024",
           "theme": "Concerts",
-          "image": "images/image.png"
+          "image": "images/BlackPink.jpg"
         },
         {
           "titre": "NCT : Tout ce qu'il faut savoir sur leurs multiples sous-unités",
           "date": "20 Novembre 2024",
           "theme": "Groupes",
-          "image": "images/image.png"
+          "image": "https://i.pinimg.com/736x/c3/9f/06/c39f06aefd535db610f4bce77be0fabc.jpg"
         },
         {
           "titre": "Les rookies à suivre en 2025 : NewJeans, ZEROBASEONE et plus",
           "date": "15 Novembre 2024",
           "theme": "Nouveaux talents",
-          "image": "images/image.png"
+          "image": "images/rookies.jpeg"
         },
         {
           "titre": "Les collaborations K-pop x mode qui font sensation",
           "date": "10 Novembre 2024",
           "theme": "Mode & Style",
-          "image": "images/image.png"
+          "image": "https://upload.wikimedia.org/wikipedia/en/5/52/Ros%C3%A9_and_Bruno_Mars_-_Apt..png"
         },
         {
           "titre": "Stray Kids : Un succès fulgurant dans l'industrie mondiale",
           "date": "5 Novembre 2024",
           "theme": "Groupes",
-          "image": "images/image.png"
+          "image": "https://cdn.ticketle.net/images/artists/stray-kids_c77c755bed4d.jpg?class=hr800"
         }
       ],
       "themes": [

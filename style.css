@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Lexend:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html, body {
+    font-family: 'Noto Sans Korean', sans-serif;
+    background-color: #e9cfe8;
+    margin: 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    background-color: #ae0849;
+}
+ 
+.logo {
+    display: flex;
+    gap: 20px;
+    font-size: 0.7em;
+}
+
+.navThemes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.navThemes a {
+    color: white;
+    font-size: 1em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e21c70;
+    color: white;
+    padding: 0.5em;
+    height: fit-content;
+    border-radius: 8px;
+    border: solid 2.5px #e21c70;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+ 
+.button:hover{
+    border: solid 2.5px #191b37;
+    background-color: #191b37;
+}
+
+#buttonContainer img{
+    width: 80px;
+    height: 80px;
+    border: solid 2px black;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+main img {
+    width: 10em;
+    height: auto;
+    display: block;
+}
+
+#phraseAccroche {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px 0;
+    height: 80vh;
+    background-image: url(images/BigBang.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken;
+    color: white;
+}
+
+.themesList {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    color: white;
+    padding: 32px;
+    margin: 0;
+}
+
+.themesList li {
+    background: #e21c70;
+    border-radius: 1em;
+    padding: 16px;
+}
+
+.latestArticle {
+    position: relative;
+    text-align: left;
+    color: white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.latestArticle img {
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+}
+
+.latestArticle .content {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: darken;
+}
+
+.latestArticle h3 {
+    font-size: 1.5em;
+}
+
+.latestArticle .date{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#otherArticles h2 {
+    text-align: center;
+    color: #191b37;
+}
+
