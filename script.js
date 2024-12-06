@@ -78,10 +78,12 @@ function afficherHeadline(headline) {
       <img src="${headline.image}" alt="Image for ${headline.titre}"></div>
       <div class="content">
       <h3>${headline.titre}</h3>
-      <div class="date"><p><strong>Date :</strong> ${headline.date}</p>
-      <p><strong>Theme :</strong> ${headline.theme}</p></div>
+      <div class="date"><p>
+        <strong>${headline.theme}</strong></p>
+        <p>${headline.date}</p>
+      </div>
       <p>${headline.description}</p>
-      <a href="#" class="button secondary">Read the article</a>
+      <a href="${headline.link}" target="_blank" class="button secondary">Read the article</a>
       </div>
     `;
 }
@@ -94,11 +96,15 @@ function afficherArticles(articles) {
     const articleDiv = document.createElement('div');
     articleDiv.classList.add('article');
     articleDiv.innerHTML = `
-      <h3>${article.titre}</h3>
-      <p><strong>Date :</strong> ${article.date}</p>
-      <p><strong>Theme :</strong> ${article.theme}</p>
       <img src="${article.image}" alt="Image for ${article.titre}">
-      <a href="#" class="button secondary">Read the article</a>
+      <div class=“articleContent“>
+      <h3>${article.titre}</h3>
+      <div class="date"><p>
+        <p><strong>${article.theme}</strong></p>
+        <p>${article.date}</p>
+      </div>
+      <a href="${article.link}" target="_blank" class="button secondary">Read the article</a>
+      </div>
     `;
     otherArticles.appendChild(articleDiv);
   });
@@ -112,9 +118,13 @@ function afficherAuteurs(auteurs) {
     let authorDiv = document.createElement('div');
     authorDiv.classList.add('article');
     authorDiv.innerHTML = `
-      <h4>${auteur.prenom}</h4>
-      <p><strong>Experience :</strong> ${auteur.typeExperience}</p>
+      <div class="auteur">
+        <a href="${auteur.linkedin}" target="_blank">
+        <img src="${auteur.image}" alt="Image de ${auteur.prenom}" class="authorImage">
+      </a>
+      <a href="${auteur.github}" target="_blank" class="authorName">${auteur.prenom}</a>
       <p>${auteur.presentation}</p>
+      </div>
     `;
     authorsContainer.appendChild(authorDiv);
   })

@@ -14,6 +14,11 @@ h1{
 h2{
     font-weight: 600;
     font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2em;
 }
 
 p{
@@ -95,7 +100,7 @@ li a {
 }
 
 main img {
-    width: 10em;
+    width: 25em;
     height: auto;
     display: block;
 }
@@ -132,6 +137,71 @@ main img {
     padding: 16px;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.2em;
+    }
+
+    #buttonContainer img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .latestArticle img {
+        height: 20em;
+    }
+
+    .authorsContainer {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .auteur {
+        max-width: 100%;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        padding: 0.4em 0.8em;
+    }
+
+    #phraseAccroche {
+        height: auto;
+        padding: 1.5em;
+    }
+
+    .themesList {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+/* Section - Headline */
 .latestArticle {
     position: relative;
     text-align: left;
@@ -153,7 +223,7 @@ main img {
     bottom: 8px;
     left: 16px;
     padding: 2em;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.502); 
     background-blend-mode: darken;
 }
 
@@ -161,14 +231,221 @@ main img {
     font-size: 1.5em;
 }
 
-.latestArticle .date{
+.date{
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-#otherArticles h2 {
-    text-align: center;
-    color: #191b37;
+/* Responsive - headline section */
+@media (max-width: 768px) {
+    .latestArticle img {
+        height: 5em;
+    }
+
+    .latestArticle .content {
+        font-size: 15px;
+        padding: 0.5em;
+    }
 }
 
+@media (max-width: 480px) {
+    .latestArticle {
+        flex-direction: column;
+        overflow-x: visible;
+        gap: 0.2em;
+    }
+
+    .latestArticle img {
+        height: 8em;
+    }
+
+    .latestArticle .content {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* Section - other articles */
+#otherArticles #auteurs h2 {
+    color: #191b37;
+    margin-top: 0;
+}
+
+.articlesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articlesContainer .article {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid #191b37;
+    padding-bottom: 15px;
+}
+
+.articleContent {
+    align-content: start;
+}
+
+.articlesContainer .article img {
+    border-radius: 5px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.articlesContainer .article .content {
+    flex: 1;
+}
+
+/* Responsive - section otherArticles */
+@media (max-width: 768px) {
+    .articlesContainer .article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .articlesContainer .article img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .articleContent {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .articlesContainer {
+        gap: 0.5em;
+    }
+
+    .articlesContainer .article img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .articleContent {
+        font-size: 0.8rem;
+    }
+}
+
+/* Section - #auteurs */
+.authorsContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auteur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.authorImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e21c70; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.authorImage:hover {
+    transform: scale(1.1); 
+}
+
+.authorName {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e21c70;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.authorName:hover {
+    color: #191b37; 
+}
+
+.auteur p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0 0;
+}
+
+/* Responsive - section auteurs */
+@media (max-width: 768px) {
+    .authorsContainer {
+        gap: 1em;
+    }
+
+    .auteur {
+        max-width: 120px;
+        padding: 0.8em;
+    }
+
+    .authorImage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .authorName {
+        font-size: 0.9rem;
+    }
+
+    .auteur p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .authorsContainer {
+        flex-direction: column;
+    }
+
+    .authorImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .authorName {
+        font-size: 0.8rem;
+    }
+
+    .auteur p {
+        font-size: 0.7rem;
+    }
+}
+
+
+footer{
+    background: #e21c70;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+/* Responsive - section footer */
+@media (max-width: 480px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 0.5em;
+    }
+}
